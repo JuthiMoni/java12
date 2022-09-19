@@ -1,3 +1,28 @@
+			
+	    String email=txtEmail.getText().trim();
+                String PATTERN = "^[a-zA-Z0-9]{0,30}[@][a-zA-Z0-9]{0,10}[.][a-zA-Z]{0,5}$";
+                Pattern p=Pattern.compile(PATTERN);
+                Matcher m=p.matcher(email);
+                
+        if(m.find()){
+                JOptionPane.showMessageDialog(this, "Congasulation! \n Your email address is valid");
+            }
+            else{
+                if(!email.equals("")){
+                    JOptionPane.showMessageDialog(this, "Invalid");
+                   // txtEmail.requestFocus();
+              }
+                 clear();
+            }		
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			//two array sort///
 			
 /*
