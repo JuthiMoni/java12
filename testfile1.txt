@@ -16,7 +16,22 @@
             }		
 			
 			
-			
+		
+		//ist
+		
+		 String PATTERN = "^[a-zA-Z0-9]{0,30}[@][a-zA-Z0-9]{0,10}[.][a-zA-Z]{0,7}$";
+        Pattern patt = Pattern.compile(PATTERN);
+        Matcher match = patt.matcher(txtEmail.getText());
+        
+        if(!match.matches()){
+            
+            JOptionPane.showMessageDialog(this, "Validation Failed!");
+            
+        }else{
+       
+ 
+        JOptionPane.showMessageDialog(this, "Validation Success!");
+        }
 			
 			
 			
